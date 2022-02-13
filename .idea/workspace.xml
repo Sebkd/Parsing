@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f6cd4f5-681d-44fb-82c3-5789c135344b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +45,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/git_ignore" />
       <recent name="$PROJECT_DIR$/lesson-1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Parsing">
+  <component name="RunManager" selected="Shell Script.run.sh">
     <configuration name="Parsing" type="PythonConfigurationType" factoryName="Python">
       <module name="Parsing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,8 +94,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.run.sh" />
         <item itemvalue="Python.env_secret" />
       </list>
     </recent_temporary>
@@ -111,7 +127,7 @@
       <workItem from="1644429580186" duration="7840000" />
       <workItem from="1644506945914" duration="8710000" />
       <workItem from="1644520889826" duration="33000" />
-      <workItem from="1644773439151" duration="164000" />
+      <workItem from="1644773439151" duration="855000" />
     </task>
     <servers />
   </component>
