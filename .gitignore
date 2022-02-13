@@ -1,5 +1,7 @@
-help api github.odt
+git_ignore/help api github.odt
 /lesson-1/env_secret.py
 /lesson-1/env_secret.py
 /github.json
 /lesson-1/github.json
+/git_ignore/
+/venv_parsing/
