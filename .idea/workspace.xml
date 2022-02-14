@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f6cd4f5-681d-44fb-82c3-5789c135344b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-1/youtube.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-1/youtube.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-2/lesson_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-2/lesson_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,8 @@
       <workItem from="1644429580186" duration="7840000" />
       <workItem from="1644506945914" duration="8710000" />
       <workItem from="1644520889826" duration="33000" />
-      <workItem from="1644773439151" duration="6626000" />
+      <workItem from="1644773439151" duration="6691000" />
+      <workItem from="1644861738597" duration="9153000" />
     </task>
     <servers />
   </component>
@@ -181,9 +181,27 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson-2/lesson_2.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Parsing$env_secret.coverage" NAME="env_secret Coverage Results" MODIFIED="1644510574275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Parsing$Parsing.coverage" NAME="Parsing Coverage Results" MODIFIED="1644781745713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-2" />
+    <SUITE FILE_PATH="coverage/Parsing$Parsing.coverage" NAME="Parsing Coverage Results" MODIFIED="1644870903196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-2" />
     <SUITE FILE_PATH="coverage/Parsing$lesson_2.coverage" NAME="lesson_2 Coverage Results" MODIFIED="1644781387390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-2" />
   </component>
 </project>
