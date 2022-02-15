@@ -3,6 +3,7 @@ from urllib.parse import urlencode, urljoin, quote_plus, unquote
 
 from bs4 import BeautifulSoup
 import requests
+import re
 
 # headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) '
 #                          'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 '
@@ -50,18 +51,38 @@ if __name__ == "__main__":
     if response.ok:
         dom = BeautifulSoup(response.text, 'html.parser')
         quotes = dom.find_all('div', {'class': 'vacancy-serp-item'})
-        dict_vacancy = {}
+        dict_vacancy = {
+            'Наименование вакансии': None,
+            'Предлагаемая зарплата': None,
+            'Ссылка на вакансию': None,
+            'Работодатель': None,
+            'Расположение': None,
+            'Сайт, откуда собрана вакансия': None,
+        }
         for quote in quotes:
-            # pprint(type(quote))
             quote_title = quote.find('a').getText()
+            dict_vacancy['Наименование вакансии'] = quote_title
             if quote.find('span', attrs={'data-qa' : 'vacancy-serp__vacancy-compensation'}) is None:
                 quote_salary = 'None'
             else:
                 quote_salary = quote.find('span', attrs={'data-qa' : 'vacancy-serp__vacancy-compensation'}).text
-            print(quote_salary)
-            quote_val = 0
-            if len(quote_salary[:-1]) > 15:
-                quote_val = quote_salary[-4:-1]
-                quote_max = quote_salary.split()
-                print(quote_max)
-
+            pattern_salary = r'(\d+\s\d+)'
+            matches_salary = re.findall(pattern_salary, quote_salary.replace(' ', ''))
+            matches_currency = 'руб' if 'руб' in quote_salary else 'USD' if 'USD' in quote_salary else 'None'
+            dict_salary = {
+                'min' : None,
+                'max' : None,
+                'валюта': matches_currency,
+            }
+            if len(matches_salary):
+                if len(matches_salary) > 1:
+                    dict_salary['min'] = int(matches_salary[0].replace('\u202f', ''))
+                    dict_salary['max'] = int(matches_salary[1].replace('\u202f', ''))
+                else:
+                    if 'от' in quote_salary:
+                        dict_salary['min'] = int(matches_salary[0].replace('\u202f', ''))
+                    else:
+                        dict_salary['max'] = int(matches_salary[0].replace('\u202f', ''))
+            dict_vacancy['Предлагаемая зарплата'] = dict_salary
+            # pprint(dict_vacancy)
+            
