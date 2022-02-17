@@ -11,7 +11,7 @@ import hashlib
 client = MongoClient('localhost', 27017)
 
 db_mongo = client['vacancy']
-db_mongo.drop_collection('vacancy')
+db_mongo.drop_collection('vacancy') # для полноценного стирания базы данных
 vacancy = db_mongo.vacancy
 
 
@@ -20,26 +20,19 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) '
                          'Safari/537.36'}
 
 
-def hash_key(dict_in):
-    id_key = hashlib.sha256()
-    id_key.update(b'dict_in')
-    return id_key.hexdigest()
 
 def insert_db(dict_vacancys):
+    '''Функция по заполнению базы данных'''
     for vacancy_dict in dict_vacancys.values():
-        hash_str_key = ''
-        for key, pole in vacancy_dict.items():
-            hash_str_key = hash_str_key + str(pole[key])
-        print(hash_str_key)
-        # print(key, "salt" + str(key), hashlib.sha256(b'"salt" + str(key)').hexdigest())
-    # try:
-        vacancy.insert_one({
-            '_id': hashlib.sha256(b'hash(key)').hexdigest(),
-            '_vacancy' : vacancy_dict,
-        })
-        print('excellent')
-        # except DuplicateKeyError:
-        #     continue
+        try:
+            vacancy.insert_one({
+                '_id': vacancy_dict['Ссылка на вакансию'],
+                '_vacancy' : vacancy_dict,
+            })
+            print(f'"Элемент внесен')
+        except DuplicateKeyError:
+            print(f'есть такой элемент')
+            continue
 
 
 if __name__ == "__main__":
@@ -72,6 +65,7 @@ if __name__ == "__main__":
             'Сайт, откуда собрана вакансия': base_url,
         }
         response = requests.get(url, headers=HEADERS)
+        check = 0
         if response.ok:
             dom = BeautifulSoup(response.text, 'html.parser')
             quotes = dom.find_all('div', {'class': 'vacancy-serp-item'})
@@ -118,12 +112,16 @@ if __name__ == "__main__":
             query = "?" + urlencode(params)
             url = urljoin(base_url, query)
             index_page += 1
-            if index_page > 10:
+            if index_page > 40 or check == len(dict_vacancys):
                 break
             else:
+                print(f'page: {index_page} записей {len(dict_vacancys)}')
+                check = len(dict_vacancys)
                 continue
         else:
             break
 
-    insert_db(dict_vacancys)
+    insert_db(dict_vacancys) #добавляем словарь в базу данных
+
+
 
