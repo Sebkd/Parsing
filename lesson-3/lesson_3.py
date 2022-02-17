@@ -1,5 +1,5 @@
 from pprint import pprint
-from urllib.parse import urlencode, urljoin, quote_plus, unquote
+from urllib.parse import urlencode, urljoin
 
 from bs4 import BeautifulSoup
 import requests
@@ -14,29 +14,39 @@ db_mongo = client['vacancy']
 db_mongo.drop_collection('vacancy') # для полноценного стирания базы данных
 vacancy = db_mongo.vacancy
 
-
 HEADERS = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) '
                          'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 '
                          'Safari/537.36'}
-
 
 
 def insert_db(dict_vacancys):
     '''Функция по заполнению базы данных'''
     for vacancy_dict in dict_vacancys.values():
         try:
-            vacancy.insert_one({
-                '_id': vacancy_dict['Ссылка на вакансию'],
-                '_vacancy' : vacancy_dict,
+            vacancy.insert_one({  # _id заполняется посредством hash из ссылки, которая уникальна
+                '_id': (hashlib.sha256(vacancy_dict["Ссылка на вакансию"].encode())).hexdigest(),
+                '_vacancy': vacancy_dict,
             })
-            print(f'"Элемент внесен')
         except DuplicateKeyError:
-            print(f'есть такой элемент')
+            print('есть такой элемент')
             continue
 
 
+def search_sallary_db(check_salary):
+    '''Написать функцию, которая производит поиск и отправляет вакансии
+    с заработной платой больше введённой суммы
+    (необходимо анализировать оба поля зарплаты).'''
+    salary_w_condition = list(
+        vacancy.find(
+            {'$or': [{"_vacancy.Предлагаемая зарплата.max": {'$gte': check_salary}},
+                     {"_vacancy.Предлагаемая зарплата.min": {'$gte': check_salary}}]}
+        )
+    )
+    return salary_w_condition
+
+
 if __name__ == "__main__":
-    search_vacancy = 'Python стажер'
+    search_vacancy = 'Python разработчик'
     base_url = 'https://hh.ru/search/vacancy'
     params = {
         'clusters': 'true',
@@ -65,7 +75,7 @@ if __name__ == "__main__":
             'Сайт, откуда собрана вакансия': base_url,
         }
         response = requests.get(url, headers=HEADERS)
-        check = 0
+        # check = 0
         if response.ok:
             dom = BeautifulSoup(response.text, 'html.parser')
             quotes = dom.find_all('div', {'class': 'vacancy-serp-item'})
@@ -107,21 +117,13 @@ if __name__ == "__main__":
 
                 index_vacancy += 1
 
-        if dom.find('div', attrs={'class': 'pager'}):
+        if dom.find('a', attrs={'data-qa': 'pager-next'}):
             params['page'] = str(index_page)
             query = "?" + urlencode(params)
             url = urljoin(base_url, query)
             index_page += 1
-            if index_page > 40 or check == len(dict_vacancys):
-                break
-            else:
-                print(f'page: {index_page} записей {len(dict_vacancys)}')
-                check = len(dict_vacancys)
-                continue
         else:
             break
 
-    insert_db(dict_vacancys) #добавляем словарь в базу данных
-
-
-
+    insert_db(dict_vacancys)  # добавляем словарь в базу данных
+    pprint(search_sallary_db(150000)) # ищем по критериям
