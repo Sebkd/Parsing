@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f6cd4f5-681d-44fb-82c3-5789c135344b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-3/lesson_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-3/lesson_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -173,7 +172,9 @@
       <workItem from="1645080703794" duration="2075000" />
       <workItem from="1645119428256" duration="7209000" />
       <workItem from="1645253247998" duration="25000" />
-      <workItem from="1645593124241" duration="376000" />
+      <workItem from="1645593124241" duration="1216000" />
+      <workItem from="1645637959082" duration="367000" />
+      <workItem from="1645640597173" duration="1876000" />
     </task>
     <servers />
   </component>
