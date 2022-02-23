@@ -23,7 +23,10 @@ def insert_db(dict_vacancys):
     '''Функция по заполнению базы данных'''
     for vacancy_dict in dict_vacancys.values():
         try:
-            vacancy.insert_one({  # _id заполняется посредством hash из ссылки, которая уникальна
+            vacancy.insert_one({
+                # _id заполняется посредством hash из ссылки, которая уникальна
+                # проверку hash делаем именно на этом этапе, так как база данных по идеи будет дополняться
+                # и делать проверку на более раннем этапе нецелесообразно, так как там просто делается словарь объектов
                 '_id': (hashlib.sha256(vacancy_dict["Ссылка на вакансию"].encode())).hexdigest(),
                 '_vacancy': vacancy_dict,
             })

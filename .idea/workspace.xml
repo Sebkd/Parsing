@@ -43,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson-3/lesson_3.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -171,7 +171,9 @@
       <workItem from="1645034986332" duration="9967000" />
       <workItem from="1645048794941" duration="12000" />
       <workItem from="1645080703794" duration="2075000" />
-      <workItem from="1645119428256" duration="6875000" />
+      <workItem from="1645119428256" duration="7209000" />
+      <workItem from="1645253247998" duration="25000" />
+      <workItem from="1645593124241" duration="376000" />
     </task>
     <servers />
   </component>
