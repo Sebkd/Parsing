@@ -165,8 +165,8 @@
       <item itemvalue="Python.Parsing" />
       <item itemvalue="Python.env_secret" />
       <item itemvalue="Python.lesson_2" />
-      <item itemvalue="Shell Script.run.sh" />
       <item itemvalue="Python.lesson_4" />
+      <item itemvalue="Shell Script.run.sh" />
     </list>
     <recent_temporary>
       <list>
@@ -201,6 +201,9 @@
       <workItem from="1645637959082" duration="367000" />
       <workItem from="1645640597173" duration="2151000" />
       <workItem from="1645706537041" duration="10143000" />
+      <workItem from="1645977363121" duration="369000" />
+      <workItem from="1645977754219" duration="204000" />
+      <workItem from="1647182830635" duration="18602000" />
     </task>
     <servers />
   </component>
@@ -220,13 +223,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lesson-4/lesson_4.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -239,7 +235,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Parsing$env_secret.coverage" NAME="env_secret Coverage Results" MODIFIED="1644510574275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Parsing$Parsing.coverage" NAME="Parsing Coverage Results" MODIFIED="1645129515277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-3" />
-    <SUITE FILE_PATH="coverage/Parsing$lesson_4.coverage" NAME="lesson_4 Coverage Results" MODIFIED="1645730690650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-4" />
+    <SUITE FILE_PATH="coverage/Parsing$lesson_4.coverage" NAME="lesson_4 Coverage Results" MODIFIED="1647203395462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-4" />
     <SUITE FILE_PATH="coverage/Parsing$lesson_2.coverage" NAME="lesson_2 Coverage Results" MODIFIED="1644781387390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-2" />
   </component>
 </project>
