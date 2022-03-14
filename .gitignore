@@ -5,3 +5,4 @@ git_ignore/help api github.odt
 /lesson-1/github.json
 /git_ignore/
 /venv_parsing/
+/lesson-5/chromedriver
