@@ -6,3 +6,4 @@ git_ignore/help api github.odt
 /git_ignore/
 /venv_parsing/
 /lesson-5/chromedriver
+/secret.py
