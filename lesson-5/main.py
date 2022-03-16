@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
 
 from secret import LOGIN, PASSWORD
 
@@ -20,13 +21,24 @@ element.send_keys(PASSWORD)
 
 element.send_keys(Keys.ENTER) # имитация нажатия клавиши
 
-input('continue')
-# print()
-#
-#
-# while True:
-#
-#
-#     pass
-#
+element = driver.find_element(By.XPATH, '//a[contains(@href, "/users/")]')
+href = element.get_attribute('href')
+driver.get(href) # переход по ссылке selenium нам построить абсолютный путь, второй раз потому что есть косяк на сайте
+
+element = driver.find_element(By.XPATH, '//a[contains(@href, "/users/")]')
+href = element.get_attribute('href')
+driver.get(href) # переход по ссылке selenium нам построить абсолютный путь
+
+element = driver.find_element(By.CLASS_NAME, 'text-sm')
+href = element.get_attribute('href')
+driver.get(href) # переход по ссылке selenium нам построить абсолютный путь
+
+hours = driver.find_element(By.NAME, 'user[time_zone]')
+select = Select(hours)
+select.select_by_value('Moscow')
+
+hours.submit()# сохранить состояние формы
+
+print()
+
 driver.close()
