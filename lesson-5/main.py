@@ -19,25 +19,25 @@ element.send_keys(LOGIN)
 element = driver.find_element(By.ID, 'user_password')
 element.send_keys(PASSWORD)
 
-element.send_keys(Keys.ENTER) # имитация нажатия клавиши
+element.send_keys(Keys.ENTER)  # имитация нажатия клавиши
 
 element = driver.find_element(By.XPATH, '//a[contains(@href, "/users/")]')
 href = element.get_attribute('href')
-driver.get(href) # переход по ссылке selenium нам построить абсолютный путь, второй раз потому что есть косяк на сайте
+driver.get(href)  # переход по ссылке selenium нам построить абсолютный путь, второй раз потому что есть косяк на сайте
 
 element = driver.find_element(By.XPATH, '//a[contains(@href, "/users/")]')
 href = element.get_attribute('href')
-driver.get(href) # переход по ссылке selenium нам построить абсолютный путь
+driver.get(href)  # переход по ссылке selenium нам построить абсолютный путь
 
 element = driver.find_element(By.CLASS_NAME, 'text-sm')
 href = element.get_attribute('href')
-driver.get(href) # переход по ссылке selenium нам построить абсолютный путь
+driver.get(href)  # переход по ссылке selenium нам построить абсолютный путь
 
 hours = driver.find_element(By.NAME, 'user[time_zone]')
 select = Select(hours)
 select.select_by_value('Moscow')
 
-hours.submit()# сохранить состояние формы
+hours.submit()  # сохранить состояние формы
 
 print()
 
