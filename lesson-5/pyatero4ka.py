@@ -11,6 +11,7 @@ service = Service('./chromedriver')
 
 chrome_options = Options()  # для работы с опциями браузера, например чтобы он открылся на полный экран
 chrome_options.add_argument('start-maximized')  # полный экран
+# chrome_options.add_argument('--headless')
 
 driver = webdriver.Chrome(service=service, options=chrome_options)
 # driver.implicitly_wait(10) # ждем 10 секунд до появления события, без использования WebDriverWait и expected_conditions
@@ -40,6 +41,10 @@ while index < 20:
     # button = driver.find_element(By.CLASS_NAME, 'add-more-btn')
     button.click()  # кликаем по элементу
     index += 1
+
+elements = driver.find_elements(By.CLASS_NAME, 'product-card item')
+for element in elements:
+    pass
 
 print()
 

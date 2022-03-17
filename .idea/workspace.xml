@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9f6cd4f5-681d-44fb-82c3-5789c135344b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-5/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-5/pyatero4ka.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-5/pyatero4ka.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <recent name="$PROJECT_DIR$/lesson-1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Parsing">
+  <component name="RunManager" selected="Python.picabu">
     <configuration name="Parsing" type="PythonConfigurationType" factoryName="Python">
       <module name="Parsing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,28 +73,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson-5/pyatero4ka.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="env_secret" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Parsing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson-1/env_secret.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,6 +147,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="picabu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Parsing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson-5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson-5/picabu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -185,19 +186,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Parsing" />
-      <item itemvalue="Python.env_secret" />
       <item itemvalue="Python.lesson_2" />
       <item itemvalue="Python.lesson_4" />
       <item itemvalue="Python.main" />
       <item itemvalue="Shell Script.run.sh" />
+      <item itemvalue="Python.picabu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.picabu" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.lesson_4" />
         <item itemvalue="Python.lesson_2" />
         <item itemvalue="Shell Script.run.sh" />
-        <item itemvalue="Python.env_secret" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +232,7 @@
       <workItem from="1647279561256" duration="7450000" />
       <workItem from="1647365106805" duration="2411000" />
       <workItem from="1647449838478" duration="8690000" />
-      <workItem from="1647540240506" duration="6268000" />
+      <workItem from="1647540240506" duration="7933000" />
     </task>
     <servers />
   </component>
@@ -259,7 +260,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lesson-5/pyatero4ka.py</url>
-          <line>43</line>
+          <line>48</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -274,9 +275,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Parsing$env_secret.coverage" NAME="env_secret Coverage Results" MODIFIED="1644510574275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Parsing$Parsing.coverage" NAME="Parsing Coverage Results" MODIFIED="1647547034513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
+    <SUITE FILE_PATH="coverage/Parsing$Parsing.coverage" NAME="Parsing Coverage Results" MODIFIED="1647547681868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
     <SUITE FILE_PATH="coverage/Parsing$lesson_4.coverage" NAME="lesson_4 Coverage Results" MODIFIED="1647282245111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-4" />
     <SUITE FILE_PATH="coverage/Parsing$main.coverage" NAME="main Coverage Results" MODIFIED="1647541857066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
+    <SUITE FILE_PATH="coverage/Parsing$picabu.coverage" NAME="picabu Coverage Results" MODIFIED="1647548648557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
     <SUITE FILE_PATH="coverage/Parsing$lesson_2.coverage" NAME="lesson_2 Coverage Results" MODIFIED="1644781387390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-2" />
     <SUITE FILE_PATH="coverage/Parsing$lesson_5.coverage" NAME="main Coverage Results" MODIFIED="1647460504482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
   </component>
