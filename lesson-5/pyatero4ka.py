@@ -46,6 +46,8 @@ elements = driver.find_elements(By.CLASS_NAME, 'product-card item')
 for element in elements:
     pass
 
+
+
 print()
 
 driver.close()
