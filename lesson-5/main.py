@@ -7,6 +7,8 @@ from selenium.webdriver.support.ui import Select
 
 from secret import LOGIN, PASSWORD
 
+
+
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 # driver = webdriver.Chrome(executable_path='./chromedriver')

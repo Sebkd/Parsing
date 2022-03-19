@@ -7,7 +7,7 @@
     <list default="true" id="9f6cd4f5-681d-44fb-82c3-5789c135344b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-5/lesson-5hw.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-5/lesson-5hw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson-5/pyatero4ka.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-5/pyatero4ka.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson-5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-5/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,6 +241,7 @@
       <workItem from="1647449838478" duration="8690000" />
       <workItem from="1647540240506" duration="8031000" />
       <workItem from="1647628969822" duration="7106000" />
+      <workItem from="1647700274435" duration="22129000" />
     </task>
     <servers />
   </component>
@@ -263,13 +264,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lesson-5/main.py</url>
-          <line>41</line>
+          <line>43</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lesson-5/pyatero4ka.py</url>
           <line>50</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson-5/lesson-5hw.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson-5/lesson-5hw.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -285,7 +296,7 @@
     <SUITE FILE_PATH="coverage/Parsing$env_secret.coverage" NAME="env_secret Coverage Results" MODIFIED="1644510574275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Parsing$Parsing.coverage" NAME="Parsing Coverage Results" MODIFIED="1647547681868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
     <SUITE FILE_PATH="coverage/Parsing$lesson_4.coverage" NAME="lesson_4 Coverage Results" MODIFIED="1647282245111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-4" />
-    <SUITE FILE_PATH="coverage/Parsing$lesson_5hw.coverage" NAME="lesson-5hw Coverage Results" MODIFIED="1647638332724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
+    <SUITE FILE_PATH="coverage/Parsing$lesson_5hw.coverage" NAME="lesson-5hw Coverage Results" MODIFIED="1647726111738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
     <SUITE FILE_PATH="coverage/Parsing$main.coverage" NAME="main Coverage Results" MODIFIED="1647541857066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
     <SUITE FILE_PATH="coverage/Parsing$picabu.coverage" NAME="picabu Coverage Results" MODIFIED="1647629105595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-5" />
     <SUITE FILE_PATH="coverage/Parsing$lesson_2.coverage" NAME="lesson_2 Coverage Results" MODIFIED="1644781387390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson-2" />
