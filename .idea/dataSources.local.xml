@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PY-213.6777.50">
+  <component name="dataSourceStorageLocal" created-in="PY-213.7172.26">
     <data-source name="vacancy@localhost" uuid="df2059a1-2622-45d2-b20a-6d9fe085ed8a">
+      <database-info product="Mongo DB" version="3.6.8" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.13" dbms="MONGO" exact-version="3.6.8" exact-driver-version="1.13" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-provider>no-auth</auth-provider>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="mailnews@localhost" uuid="5f1f02d0-b655-4e60-aa2a-bcbc7158d719">
+      <database-info product="Mongo DB" version="3.6.8" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.13" dbms="MONGO" exact-version="3.6.8" exact-driver-version="1.13" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="mailnews" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="emails@localhost" uuid="fb8a67d2-626e-4385-8caa-cbcfd76a847a">
       <database-info product="Mongo DB" version="3.6.8" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.13" dbms="MONGO" exact-version="3.6.8" exact-driver-version="1.13" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>

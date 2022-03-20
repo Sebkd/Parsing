@@ -5,10 +5,12 @@
       <excludeFolder url="file://$MODULE_DIR$/venv_parsing" />
       <excludeFolder url="file://$MODULE_DIR$/git_ignore" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (Parsing)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="$MODULE_DIR$/requirements.txt" />
+    <option name="removeUnused" value="true" />
     <option name="modifyBaseFiles" value="true" />
   </component>
 </module>
